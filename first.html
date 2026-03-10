@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Learner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+
+<div class="container">
+    <div class="lives">
+    <span class="heart">❤️</span>
+    <span class="heart">❤️</span>
+    <span class="heart">❤️</span>
+    </div>
+    
+
+    <div class="card">
+        <h3 id="qs">The header file required for printf() and scanf() is
+            <input type="text" id="bl" size="5"/>
+        </h3>
+
+        <div class="options-container" id="wordBank"></div>
+
+        <div id="message"></div>
+
+        
+        <button class="clear-btn" onclick="clearBlank()">clear</button>
+        <button class="check-btn" onclick="checkAnswer()">Check</button>
+        
+
+    </div>
+</div>
+
+  
+    <button class="next-btn"  onclick="nextQuestion()">Next</button>
+    <button class="back-btn"  onclick="backQuestion()">Back</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
