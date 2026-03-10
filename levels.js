@@ -11,27 +11,27 @@ document.querySelector(".page").classList.toggle("shift");
 
 const data = {
 "01. HTML Basics": [
-{level:"Level 1", locked:false},
-{level:"Level 2", locked:false},
-{level:"Level 3", locked:false},
-{level:"Level 4", locked:false},
-{level:"Level 5", locked:false},
-{level:"Level 6", locked:true}
+{level:"Level 1"},
+{level:"Level 2"},
+{level:"Level 3"},
+{level:"Level 4"},
+{level:"Level 5"},
+{level:"Level 6"}
 ],
 
 "02. CSS": [
-{level:"Level 1", locked:false},
-{level:"Level 2", locked:true},
-{level:"Level 3", locked:true}
+{level:"Level 1"},
+{level:"Level 2"},
+{level:"Level 3"}
 ],
 
 "03. JavaScript": [
-{level:"Level 1", locked:false},
-{level:"Level 2", locked:true}
+{level:"Level 1"},
+{level:"Level 2"}
 ],
 
 "04. React": [
-{level:"Level 1", locked:true}
+{level:"Level 1"}
 ]
 };
 
@@ -45,13 +45,10 @@ data[topic].forEach((lvl,i)=>{
 let div = document.createElement("div");
 div.className = "level";
 
-if(lvl.locked){
-div.classList.add("locked");
-}
 
 div.innerHTML = `
 <span>${lvl.level}</span>
-<button>${lvl.locked ? "Locked 🔒" : "Start"}</button>
+<button>${"Start"}</button>
 `;
 
 levelsContainer.appendChild(div);
