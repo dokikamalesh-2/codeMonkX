@@ -1,0 +1,137 @@
+body{
+margin:0;
+font-family:Arial;
+background:#c2d7f0;
+color:#1b2a41;
+}
+
+.topbar{
+height:60px;
+background:#7aacee;
+color:white;
+display:flex;
+align-items:center;
+padding:0 20px;
+gap:20px;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:1000;
+box-shadow:0 2px 8px rgba(0,0,0,0.15);
+}
+
+.menu-btn{
+font-size:28px;
+cursor:pointer;
+}
+
+
+.page{
+display:flex;
+margin-top:20px;
+transition:0.3s;
+}
+
+.page.shift{
+margin-left:260px;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:260px;
+background:white;
+height:calc(100vh - 60px);
+padding-top:20px;
+position:fixed;
+top:60px;
+left:0;
+transform:translateX(-260px);
+transition:0.3s;
+box-shadow:2px 0 8px rgba(0,0,0,0.1);
+}
+
+.sidebar.open{
+transform:translateX(0);
+}
+
+
+.topic{
+padding:14px 24px;
+cursor:pointer;
+font-size:15px;
+border-left:4px solid transparent;
+transition:0.2s;
+}
+
+.topic:hover{
+background:#eef5ff;
+}
+
+.topic.active{
+background:#e3f0ff;
+border-left:4px solid #2f80ed;
+font-weight:600;
+}
+
+
+.content{
+flex:1;
+padding:40px;
+}
+
+/* LEVEL AREA */
+
+.levels{
+margin-top:-40px;
+display:flex;
+flex-direction:column;
+align-items:flex-end;
+gap:15px;
+}
+
+/* LEVEL CARD */
+
+.level{
+width:600px;
+background:white;
+padding:18px;
+border-radius:12px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+transition:0.2s;
+}
+
+.level:hover{
+transform:translateY(-3px);
+box-shadow:0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* BUTTON */
+
+.level button{
+background:#2f80ed;
+border:none;
+padding:8px 18px;
+border-radius:6px;
+color:white;
+cursor:pointer;
+}
+
+.level button:hover{
+background:#1f6fe0;
+}
+
+/* LOCKED */
+
+.locked{
+opacity:0.6;
+}
+
+.locked button{
+background:#b5c8ff;
+cursor:not-allowed;
+}
