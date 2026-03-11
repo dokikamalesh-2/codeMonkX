@@ -10,7 +10,7 @@ document.querySelector(".page").classList.toggle("shift");
 }
 
 const data = {
-"01. HTML Basics": [
+"01. Basics": [
 {level:"Level 1"},
 {level:"Level 2"},
 {level:"Level 3"},
@@ -19,19 +19,23 @@ const data = {
 {level:"Level 6"}
 ],
 
-"02. CSS": [
+"02. Logic Gates": [
 {level:"Level 1"},
 {level:"Level 2"},
 {level:"Level 3"}
 ],
 
-"03. JavaScript": [
+"03. Memory & Pointers": [
 {level:"Level 1"},
 {level:"Level 2"}
 ],
 
-"04. React": [
+"04. The Architect": [
 {level:"Level 1"}
+],
+
+"05. Advanced":[
+{level:"level 1"}
 ]
 };
 
@@ -74,7 +78,7 @@ function goToLevelsPage(){
     window.location.href ="first.html";
 }
 
-loadLevels("01. HTML Basics");
+loadLevels("01. Basics");
 
 
 

@@ -13,7 +13,28 @@ const questions = [
         question: "Which function is used to allocate memory dynamically?",
         answer: "malloc",
         options: ["calloc", "malloc", "free", "sizeof"]
+    },
+    {
+        question: "Every C program must contain a function called:",
+        answer: "main()",
+        options: ["start()", "system()", "main()", "include()"]
+    },
+    {
+        question: "Which character is used to end a statement in C?",
+        answer: ";",
+        options: [":", ".", "!", ";"]
+    },
+    {
+        question: "How do you write a single-line comment?",
+        answer: "// Comment",
+        options: ["# Comment", "// Comment", "/* Comment", "-- Comment"]
+    },
+    {
+        question: 'What is the correct way to print "Hi" in C?',
+        answer: ";",
+        options: ['cout << "Hi";', 'print("Hi");' , 'printf("Hi");', 'System.out.println("Hi");']
     }
+    
 ];
 
 let lives = 3;
@@ -89,6 +110,7 @@ function nextQuestion() {
     initGame();       //change after completing questions
 }
 
+// Going to back question
 function backQuestion() {
     if(currIndex<=0){
         initGame();
@@ -96,6 +118,10 @@ function backQuestion() {
     }
     currIndex--;
     initGame();
+}
+
+function NavigateToLevels(){
+    window.location.href="levels.html";
 }
 
 initGame();
