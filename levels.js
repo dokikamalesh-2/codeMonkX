@@ -48,7 +48,7 @@ div.className = "level";
 
 div.innerHTML = `
 <span>${lvl.level}</span>
-<button>${"Start"}</button>
+<button onclick="goToLevelsPage()">${"Start"}</button>
 `;
 
 levelsContainer.appendChild(div);
@@ -69,6 +69,10 @@ loadLevels(topic.innerText);
 });
 
 });
+
+function goToLevelsPage(){
+    window.location.href ="first.html";
+}
 
 loadLevels("01. HTML Basics");
 
